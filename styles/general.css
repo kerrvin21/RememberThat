@@ -8,6 +8,7 @@
 body{
     font-family: 'roboto',Arial, Helvetica, sans-serif;
     font-size: 12px;
+    background-color: #A8A8A8;
 }
 
 a{
@@ -17,4 +18,12 @@ a{
 
 ul{
     list-style-type: none;
+}
+
+.btn{
+    border: none;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
 }
