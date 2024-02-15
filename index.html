@@ -12,6 +12,7 @@
         <header>
             <div class="logo"><a href="#">Remember<span>That</span></a></div>
             <nav>
+                <span class="nav-close-btn" onclick="Menu(false)">x</span>
                 <ul>
                     <li><a href="#">home</a></li>
                     <li><a href="#">Features</a></li>
@@ -21,18 +22,18 @@
                     <li><a href="#">Contact</a></li>
                     <li><a class="btn-premium btn" href="#">Go Premium</a></li>
                 </ul>
-                <img class="h-menu" src="./images/menu.svg" alt="menu">
             </nav>
+            <img class="h-menu" onclick="Menu(true)" src="./images/menu.svg" alt="menu">
         </header>
     </section>
     <section class="hero-section">
         <div class="hero">
             <div class="hero-text">
-                <p>It's Nitty & Gritty</p>
+                <p class="hero-text1">It's Nitty & Gritty</p>
                 <h1>A Task app that doesn't stink</h1>
-                <div class="hero-btn btn">
-                    <a href="#">Try for free</a>
-                    <a href="#"> watch a video</a>
+                <div class="hero-btn">
+                    <a href="#" class="btn">Try for free</a>
+                    <a href="#" class="wav"> watch a video</a>
                 </div>
             </div>
             <img src="./images/illustration.svg" alt="hero_img">
@@ -60,7 +61,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="contact-section">
         <div class="contact">
             <div>
@@ -80,7 +81,8 @@
         </div>
     </section>
 
-
-
+    
+    
 </body>
+<script src="./javascript/pagefunctions.js"></script>
 </html>
