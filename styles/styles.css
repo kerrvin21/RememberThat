@@ -9,9 +9,11 @@ section > div, section > header{
 
 /*=======MOBILE VIEW=======*/
 /*HEADER*/
+section.header{
+    background-color: white;
+}
 
 section header{
-    background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -265,8 +267,60 @@ header nav ul .btn-premium:hover{
 
 
 /*=======TABLET VIEW=======*/
-@media only screen and (max-width:720px){
+@media only screen and (min-width:730px){
+    .header .h-menu, .header .nav-close-btn{
+        display: none;
+    }
+
+    section.header{
+        padding: 0 50px
+    }
+
+    .header nav{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        padding:0;
+        margin-left: 10px;
+        position: unset;
+        background-color: unset;
+    }
+
+    .header nav ul{
+        display: flex;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .header nav ul li{
+        margin: 0 5px;
+        height: fit-content;
+
+    }
+
+    .header nav ul li a{
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0;
+        vertical-align: center;
+    }
+
+    header nav ul li a:hover:not(.btn-premium){
+        font-weight: 500;
+    }
+
+    .header nav ul li a.btn-premium{
+        color: #107BDF;
+        text-wrap: nowrap;
+        padding: 0px 8px;
+        margin: 0;
+    }
     
+    .header nav ul li a.btn-premium:hover{
+        color: white;
+    }
+
 }
 /*HEADER*/
 /*HERO*/
