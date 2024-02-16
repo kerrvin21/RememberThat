@@ -95,7 +95,7 @@ div.hero .hero-text{
 
 .hero-text h1{
     text-transform: capitalize;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 55px;
 }
@@ -146,8 +146,8 @@ section.feature-section{
     color:white;
     padding:50px 0;
     text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .feature ul li{
@@ -231,15 +231,120 @@ header img.h-menu{
      display: block;  
      width: 40%; 
      transform:translateX(0%);
-    }
-    
-    
-    
+    }    
     
     /*HERO*/
+
+    section.hero-section .hero{
+        display: block;
+        text-align: center;
+    }
+
+    section.hero-section .hero-text{
+        align-items: center;
+    }
+
+    section.hero-section .hero-text .hero-btn > *{
+        margin: 0;
+    }
+
+    section.hero-section .hero-text .hero-btn{
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 120px;
+    }
     /*FEATURE*/
-/*TESTIMONIAL*/
-/*CONTACT*/
+
+    /*TESTIMONIAL*/
+    
+    section.testimonial-section{
+        background-color: #107BDF;
+        text-align: justify;
+    }
+
+    .testimonial{
+        padding: 100px 0;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .testimonial-card{
+        background-color: #0B6CCA;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+        padding: 20px 20px;
+        padding-top: 75px;
+        width: 100%;
+        max-width: 350px;
+        border-radius: 20px;
+        margin-bottom: 75px;
+    }
+
+    .testimonial-card img{
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top:-50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .testimonial-card .author{
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    /*CONTACT*/
+
+    
+    .contact-section .contact{
+        width: 100%;
+        padding: 50px 20px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .contact h2{
+        font-size: 28px;
+    }
+
+    .contact form div > * {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        height: 30px;
+        border-radius: 10px;
+    }
+    
+    .contact form input[type='submit']{
+        width: 100%;
+        margin: 10px 0;
+        font-size: 16px;
+        background-color: #107BDF;
+    }
+    .contact form div textarea{
+        height: unset;
+    }
+
+    .contact input[type="text"], .contact textarea{
+        padding: 5px 10px;
+    }
+
+    .contact iframe{
+        width: 100%;
+    }
+
+
+    .contact
+
 }
 
 
