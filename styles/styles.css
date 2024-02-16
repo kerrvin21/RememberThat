@@ -1,0 +1,287 @@
+section{
+    /* border: 1px solid red; */
+}
+section > div, section > header{
+    /* border: 1px solid; */
+    
+    padding: 13px 19px;
+}
+
+/*=======MOBILE VIEW=======*/
+/*HEADER*/
+
+section header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav-close-btn{
+    cursor: pointer;
+}
+
+header .logo{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+header .logo span{
+    color: #107BDF;
+}
+
+.header .h-menu{
+    cursor: pointer;
+}
+header nav{
+    display: none;
+}
+
+.open{
+    display:block;
+}
+
+header nav{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #1D2127;
+    padding: 20px;
+}
+
+header nav span, header nav ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+header nav span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+header nav ul{
+    padding-left: 10px;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 10px 0;
+}
+header nav ul li a:hover:not(.btn-premium){
+    font-weight: 700;
+}
+
+header nav ul .btn-premium{
+    text-align: center;
+    border: 1px solid #107BDF;
+    background-color: transparent;
+    margin-top: 15px;
+}
+header nav ul .btn-premium:hover{
+    background-color: #107BDF;
+}
+
+/*HERO*/
+
+.hero{
+    text-align: center;
+    font-size: 14px;
+    padding: 80px 30px;
+}
+
+.hero{
+}
+
+.hero-text h1{
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.hero-text .hero-text1{
+    text-transform: uppercase;
+    color: rgb(186, 186, 186);
+    letter-spacing: 7px;
+}
+
+.hero-btn{
+    padding: 20px 0;
+}
+
+.hero-text .hero-btn a{
+    display: block;
+    margin: 30px auto;
+}
+
+.hero-btn .btn{
+    background-color: #107BDF;
+    font-size: 21px;
+    font-weight: 500;
+    width: 200px;
+}
+
+.hero-btn .wav{
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-btn .wav::before{
+    content: '';
+    background-image: url('./../images/watch.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.hero img{
+    width: 50%;
+}
+
+
+/*FEATURE*/
+
+.feature-section{
+    background-color: #1D2127;
+    color: white;
+}
+
+.feature-section .feature ul{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.feature-section .feature ul li::before{
+    content: '';
+    background-image: url('../images/bullet.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.feature-section .feature ul li{
+    display: flex;
+    padding: 5px 0;
+}
+
+/*TESTIMONIAL*/
+
+.testimonial-section{
+    background-color: #107BDF;
+}
+
+.testimonial-section .testimonial{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 50px;
+    padding:100px 50px 50px 50px;
+    justify-content: center;
+}
+
+.testimonial-section .testimonial-card{
+    background-color: #0B6CCA;
+    position: relative;
+    padding: 80px 30px 50px 30px;
+    border-radius: 20px;
+    color: white;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 14px;
+}
+.testimonial-section .testimonial-card img{
+    width: 100px;
+    border-radius: 50%;
+    position:absolute;
+    left: 50%;
+    top:-30px;
+    transform: translateX(-50%);
+}
+
+.testimonial-section .testimonial-card p.author{
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*CONTACT*/
+
+.contact-section{}
+.contact div h2{
+    font-size: 32px;
+}
+
+.contact{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact div form div > *{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact form label{
+    font-weight: 500;
+}
+
+.contact form textarea{
+    padding: 3px 10px;
+}
+.contact form input[type="text"]{
+    padding: 3px 10px;
+}
+
+.contact form .btn-submit{
+    width: 100%;
+    background-color: #107BDF;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.contact-section iframe{
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+
+
+
+/*=======TABLET VIEW=======*/
+@media only screen and (max-width:720px){
+    
+}
+/*HEADER*/
+/*HERO*/
+/*FEATURE*/
+/*TESTIMONIAL*/
+/*CONTACT*/
+/*=======DESKTOP VIEW=======*/
+/*HEADER*/
+/*HERO*/
+/*FEATURE*/
+/*TESTIMONIAL*/
+/*CONTACT*/
+/*=======1080 up VIEW=======*/
+/*HEADER*/
+/*HERO*/
+/*FEATURE*/
+/*TESTIMONIAL*/
+/*CONTACT*/
