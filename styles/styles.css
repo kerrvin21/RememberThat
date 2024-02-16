@@ -438,6 +438,30 @@ header nav ul .btn-premium:hover {
 }
 
 /*=======1080 up VIEW=======*/
+@media only screen and (min-width:1440px){
+    .feature-section .feature::after{
+        content: '';
+        background-image: url('../images/dots.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        display: block;
+        position: absolute;
+        top:45px;
+        left: 120px;
+    }
+
+    .feature-section::before{
+        content: '';
+        background-color: #107BDF;
+        height: 125px;
+        width: 10%;
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+}
 /*HEADER*/
 /*HERO*/
 /*FEATURE*/
